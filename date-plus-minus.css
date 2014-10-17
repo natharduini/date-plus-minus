@@ -1,0 +1,22 @@
+.date-plus-minus {
+	display: inline-block;
+	margin: 1px 0 1px 0;
+}
+.date-plus-minus .date-plus,
+.date-plus-minus .date-minus {
+	width: 22px;
+	border: solid 1px #1C6AAD;
+	background-color: #5C9DD4;
+	color: #fff;
+}
+.date-plus-minus .date-plus {
+}
+.date-plus-minus .date-minus {
+}
+.date-plus-minus .date-plus-minus-step {
+	border: solid 1px #1C6AAD;
+	border-left: none;
+	display: inline-block;
+	font-size: 11px;
+	padding: 3px 5px 2px 5px;
+}

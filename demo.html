@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Date Plus/Minus demo</title>
+
+	<link rel="stylesheet" href="date-plus-minus.css" />
+	<script src="dependencies/jquery.min.js"></script>
+	<script src="dependencies/moment.min.js"></script>
+	<script src="date-plus-minus.min.js"></script>
+</head>
+<body>
+	<input type="text" id="start_date" value="11/12/2014 15:45" />
+	<div class="date-plus-minus"></div>
+
+	<script type="text/javascript">
+	$(function() {
+		$('.date-plus-minus').datePlusMinus({ target: '#start_date' });
+	});
+	</script>
+</body>
+</html>
