@@ -21,7 +21,7 @@
 
 	   	var html = template.replace(/\{unit}/g, opts.unit)
 	   					    .replace(/\{target}/g, opts.target)
-	   					    .replace(/\{unit_label}/g, opts.unitLabel)
+	   					    .replace(/\{unit_label}/g, (opts.unitLabel != '' ? opts.unitLabel : opts.unit))
 	   					    .replace(/\{step}/g, opts.step);
 	   	$target.attr('data-target', opts.target)
 	    	   .attr('data-unit', opts.unit)
@@ -52,7 +52,7 @@
 		format: 'DD/MM/YYYY HH:mm',
 	  	target: '',
 	  	unit: 'day',
-	  	unitLabel: 'day',
+	  	unitLabel: '',
 	  	step: 1
 	};
 	

@@ -9,12 +9,18 @@
 	<script src="date-plus-minus.min.js"></script>
 </head>
 <body>
+	<h1>Date plus/minus</h1>
+
+	<p><a href="https://github.com/natharduini/date-plus-minus">Plugin page</a></p>
+
 	<input type="text" id="start_date" value="11/12/2014 15:45" />
-	<div class="date-plus-minus"></div>
+	<div id="plusminus-day"></div>
+	<div id="plusminus-minutes"></div>
 
 	<script type="text/javascript">
 	$(function() {
-		$('.date-plus-minus').datePlusMinus({ target: '#start_date' });
+		$('#plusminus-day').datePlusMinus({ target: '#start_date' });
+		$('#plusminus-minutes').datePlusMinus({ target: '#start_date', unit: 'minutes', step: 15 });
 	});
 	</script>
 </body>
